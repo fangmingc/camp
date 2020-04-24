@@ -1,0 +1,25 @@
+name: github pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - uses: actions/setup-ruby@v1
+
+      - name: Publish Site
+        run: make
+
+      - name: Deploy
+        uses: stefanzweifel/git-auto-commit-action@v4.1.2
+        with:
+          commit_message: hugo publish
