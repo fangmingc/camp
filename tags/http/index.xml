@@ -6,10 +6,28 @@
     <description>Recent content in http on Camp</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 24 Apr 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 26 Apr 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="http://tech.xiachufang.xyz/camp/tags/http/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Http Static Server</title>
+      <link>http://tech.xiachufang.xyz/camp/posts/http-static-server/</link>
+      <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
+      
+      <guid>http://tech.xiachufang.xyz/camp/posts/http-static-server/</guid>
+      <description>当前目录结构如下
+ . ├── a.txt └── dir └── b.txt     执行
+curl http://localhost:8080/a.txt   返回 a.txt 的文件内容
+   执行
+curl http://localhost:8080/dir/b.txt   返回 dir/b.txt 的文件内容
+   执行
+curl http://localhost:8080/dir2/a.txt   返回 404。
+   执行
+curl -X POST -F &#34;file=@/path/to/test.jpg&#34; \ -H &#34;Content-Type: multipart/form-data&#34; \ http://localhost:8080/test.jpg   返回 200
+ { &#34;status&#34;: &#34;ok&#34;, &#34;url&#34;: &#34;http://localhost:8080/test.jpg&#34; }     执行</description>
+    </item>
     
     <item>
       <title>Http Parser</title>

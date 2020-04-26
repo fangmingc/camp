@@ -4,12 +4,32 @@
   
   <url>
     <loc>http://tech.xiachufang.xyz/camp/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>http://tech.xiachufang.xyz/camp/tags/http/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/posts/http-static-server/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/posts/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/tags/server/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/tags/</loc>
+    <lastmod>2020-04-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -23,17 +43,7 @@
   </url>
   
   <url>
-    <loc>http://tech.xiachufang.xyz/camp/posts/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>http://tech.xiachufang.xyz/camp/tags/protocol/</loc>
-    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://tech.xiachufang.xyz/camp/tags/</loc>
     <lastmod>2020-04-24T00:00:00+00:00</lastmod>
   </url>
   
