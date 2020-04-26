@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/tags/http/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/posts/http-parser/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/tags/parser/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/posts/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/tags/protocol/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/tags/</loc>
+    <lastmod>2020-04-24T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://tech.xiachufang.xyz/camp/categories/</loc>
+  </url>
+  
+</urlset>
