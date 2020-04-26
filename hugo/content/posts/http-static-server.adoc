@@ -1,0 +1,84 @@
+---
+title: "Http Static Server"
+date: 2020-04-26
+description: "http static server"
+tags: ["http", "server"]
+---
+= Http Static Server
+:icons: font
+
+当前目录结构如下
+
+[source,bash]
+----
+.
+├── a.txt
+└── dir
+   └── b.txt
+----
+
+* 执行
++
+[source,bash]
+----
+curl http://localhost:8080/a.txt
+----
++
+返回 `a.txt` 的文件内容
+
+* 执行
++
+[source,bash]
+----
+curl http://localhost:8080/dir/b.txt
+----
++
+返回 `dir/b.txt` 的文件内容
+
+* 执行
++
+[source,bash]
+----
+curl http://localhost:8080/dir2/a.txt
+----
++
+返回 404。
+
+* 执行
++
+[source,bash]
+----
+curl -X POST -F "file=@/path/to/test.jpg" \
+    -H "Content-Type: multipart/form-data" \
+    http://localhost:8080/test.jpg
+----
++
+返回 200
++
+[source,json]
+----
+{
+  "status": "ok",
+  "url": "http://localhost:8080/test.jpg"
+}
+----
+
+* 执行
++
+[source,bash]
+----
+curl -X POST -F "file=@/path/to/b.txt" \
+    -H "Content-Type: multipart/form-data" \
+    http://localhost:8080/dir/b.txt
+----
++
+返回 400
+
++
+[source,json]
+----
+{
+  "status": "error",
+  "msg": "file exists"
+}
+----
