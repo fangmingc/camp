@@ -1,4 +1,11 @@
+---
+title: "Http Parser"
+date: 2020-04-24
+description: "http protocol parser"
+tags: ["http", "protocol", "parser"]
+---
 = Http Parser
+:icons: font
 
 == 最终成果
 输入举例
@@ -18,16 +25,16 @@ say=Hi&to=Mom
 ----
 
 ----
-POST /test.html HTTP/1.1 
-Host: example.org 
-Content-Type: multipart/form-data;boundary="boundary" 
+POST /test.html HTTP/1.1
+Host: example.org
+Content-Type: multipart/form-data;boundary="boundary"
 
---boundary 
-Content-Disposition: form-data; name="field1" 
+--boundary
+Content-Disposition: form-data; name="field1"
 
-value1 
---boundary 
-Content-Disposition: form-data; name="field2"; filename="example.txt" 
+value1
+--boundary
+Content-Disposition: form-data; name="field2"; filename="example.txt"
 
 value2
 ----
@@ -54,7 +61,7 @@ struct Response {
     Version string,
     Code uint,
     Headers []Header,
-    Body []byte, 
+    Body []byte,
 }
 
 func parse_request(content string) *Request {
@@ -68,7 +75,7 @@ func write_reqponse(resp *Response) []byte {
 ----
 
 
-[CAUTION]
+[WARNING]
 ====
 Content-Type: multipart/form-data;boundary="boundary" 怎么处理
 ====

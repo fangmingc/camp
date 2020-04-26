@@ -1,0 +1,7 @@
+baseURL = "http://tech.xiachufang.xyz/camp/"
+languageCode = "en-us"
+title = "Camp"
+theme = "ezhil"
+
+[params]
+mode = "auto"
