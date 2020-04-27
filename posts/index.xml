@@ -17,16 +17,19 @@
       <pubDate>Sun, 26 Apr 2020 00:00:00 +0000</pubDate>
       
       <guid>http://tech.xiachufang.xyz/camp/posts/http-static-server/</guid>
-      <description>当前目录结构如下
+      <description>只使用标准库，用 socket 完成 HTTP 静态文件服务器，实现如下功能：
+  下载文件
+ 文件不存在的时候报 404
+  文件存在直接返回文件内容
+  支持 Range 下载功能 （加分）
+     上传文件
+ 可以指定文件保存的路径
+  指定路径存在文件的时候报错
+       CWD 目录结构如下
  . ├── a.txt └── dir └── b.txt     执行
 curl http://localhost:8080/a.txt   返回 a.txt 的文件内容
    执行
-curl http://localhost:8080/dir/b.txt   返回 dir/b.txt 的文件内容
-   执行
-curl http://localhost:8080/dir2/a.txt   返回 404。
-   执行
-curl -X POST -F &#34;file=@/path/to/test.jpg&#34; \ -H &#34;Content-Type: multipart/form-data&#34; \ http://localhost:8080/test.jpg   返回 200
- { &#34;status&#34;: &#34;ok&#34;, &#34;url&#34;: &#34;http://localhost:8080/test.jpg&#34; }     执行</description>
+curl http://localhost:8080/dir/b.txt   返回 dir/b.txt 的文件内容</description>
     </item>
     
     <item>

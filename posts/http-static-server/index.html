@@ -51,7 +51,44 @@
 
 		<div class="markdown">
 			<div class="paragraph">
-<p>当前目录结构如下</p>
+<p>只使用标准库，用 socket 完成 HTTP 静态文件服务器，实现如下功能：</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>下载文件</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>文件不存在的时候报 404</p>
+</li>
+<li>
+<p>文件存在直接返回文件内容</p>
+</li>
+<li>
+<p>支持 <a href="https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Range_requests">Range</a> 下载功能 （加分）</p>
+</li>
+</ol>
+</div>
+</li>
+<li>
+<p>上传文件</p>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>可以指定文件保存的路径</p>
+</li>
+<li>
+<p>指定路径存在文件的时候报错</p>
+</li>
+</ol>
+</div>
+</li>
+</ol>
+</div>
+<hr>
+<div class="paragraph">
+<p>CWD 目录结构如下</p>
 </div>
 <div class="listingblock">
 <div class="content">
