@@ -7,7 +7,19 @@ tags: ["http", "server"]
 = Http Static Server
 :icons: font
 
-当前目录结构如下
+只使用标准库，用 socket 完成 HTTP 静态文件服务器，实现如下功能：
+
+. 下载文件
+.. 文件不存在的时候报 404
+.. 文件存在直接返回文件内容
+.. 支持 https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Range_requests[Range] 下载功能 （加分）
+. 上传文件
+.. 可以指定文件保存的路径
+.. 指定路径存在文件的时候报错
+
+'''
+
+CWD 目录结构如下
 
 [source,bash]
 ----
@@ -73,7 +85,6 @@ curl -X POST -F "file=@/path/to/b.txt" \
 ----
 +
 返回 400
-
 +
 [source,json]
 ----
